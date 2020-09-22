@@ -1,0 +1,36 @@
+.el-row {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  &--flex {
+    display: flex;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+
+    &.el-justify-end {
+      justify-content: flex-end;
+    }
+    &.el-justify-center {
+      justify-content: center;
+    }
+    &.el-justify-space-around {
+      justify-content: space-around;
+    }
+    &.el-justify-space-between {
+      justify-content: space-between;
+    }
+    &.el-align-middle {
+      align-items: center;
+    }
+    &.el-align-bottom {
+      align-items: flex-end;
+    }
+
+  }
+}
